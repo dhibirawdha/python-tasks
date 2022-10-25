@@ -45,7 +45,7 @@ def binmac():
     s = "".join(MAC.split(":"))
     return " ".join(format(ord(x), "b") for x in s)
 
-def ipinbin():
+def ipbinary():
     ip = "192.168.3.1"
     newip = ip.split(".")
     s = ""
@@ -64,7 +64,7 @@ def main():
     print(intersectionvlan())
     print(ospfroute())
     print(binmac())
-    print(ipinbin())
+    print(ipbinary())
 
 if __name__ == "__main__":
     main()
